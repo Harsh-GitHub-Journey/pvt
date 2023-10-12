@@ -3,7 +3,7 @@ pipeline {
                   stages {
                           stage("Env Variables") {
                                   steps {
-                                          echo "You can also use \${BUILD_NUMBER} -> ${BUILD_NUMBER}"
+                                          echo 'You can also use \${BUILD_NUMBER} -> ${BUILD_NUMBER}'
                                   }
                           }
                           stage('hello') {
