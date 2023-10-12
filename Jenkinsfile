@@ -1,5 +1,5 @@
 pipeline {
-        agent { node { label { Slave-SSH } } }
+        agent { node { label 'Slave-SSH' } }
                   stages {
                           stage("Env Variables") {
                                   steps {
