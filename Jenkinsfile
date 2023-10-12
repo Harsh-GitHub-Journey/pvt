@@ -1,5 +1,9 @@
 pipeline {
-        agent { node { label 'Slave-SSH' } }
+        agent { node { 
+                label 'Slave-SSH'
+                customWorkspace '/home/ec2-user'
+        }
+              }
                   stages {
                           stage("Env Variables") {
                                   steps {
